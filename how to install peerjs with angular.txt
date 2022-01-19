@@ -1,0 +1,4 @@
+1-npm i ..
+2-add "<script>    window.global  = window;    var parcelRequire;  </script>" to index.html
+3-add "allowSyntheticDefaultImports": true to tsconfig.json
+4-that's it

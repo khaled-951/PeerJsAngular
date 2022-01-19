@@ -1,0 +1,23 @@
+<div>
+  <input type="text" placeholder="MyPeerId..." value="" #peerId/>
+  <button (click)="createPeer(peerId.value)" >Create Peer</button>
+</div>
+  <div>
+  <input type="text" placeholder="ConnectToPeerId..." value="" #targetPeerId>
+  <button (click)="callTargetPeer(targetPeerId.value)" >Call Target PeerID</button>
+</div>
+<div>
+  <button (click)="mypeer()" >check my peer status</button>
+</div>
+<label >My Video</label>
+<div>
+  
+  <video [srcObject]="myCamFeed" autoplay ></video>
+  <button (click)="shareMyCam()" >Watch my webcam</button>
+  <button (click)="stopWatchingMyCam()" >Stop Watching my webcam</button>
+</div>
+<label >Guest's Video</label>
+<div>
+  
+  <video [srcObject]="guestCamFeed" autoplay ></video>
+</div>
